@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const baseUrl = "http://localhost:5000/api";
+const baseUrl = `${process.env.BASE_URL}/api`;
 const getToken = () => localStorage.getItem('tokenMadinaShop')
 
 export const Axios = axios.create({
