@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const baseUrl = `${process.env.BASE_URL}/api`;
+const baseUrl = `${process.env.REACT_APP_API_URL}/api`;
 const getToken = () => localStorage.getItem('tokenMadinaShop')
 
 export const Axios = axios.create({
